@@ -1,0 +1,1 @@
+console.log("Naivas Loyalty App Loaded");

@@ -1,0 +1,26 @@
+body{
+font-family: Arial, sans-serif;
+}
+
+.hero-section{
+background:#f4f4f4;
+padding:100px 20px;
+}
+
+.hero-section h1{
+font-size:3rem;
+margin-bottom:20px;
+}
+
+.card{
+margin-top:20px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+footer{
+margin-top:50px;
+}
