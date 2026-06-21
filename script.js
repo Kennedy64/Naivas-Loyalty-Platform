@@ -1,31 +1,31 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-const form = document.getElementById("contactForm");
+    const form = document.getElementById("contactForm");
 
-if(form){
+    if (form) {
 
-form.addEventListener("submit", function(event){
+        form.addEventListener("submit", function (event) {
 
-const name = document.getElementById("name").value.trim();
-const email = document.getElementById("email").value.trim();
-const message = document.getElementById("message").value.trim();
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const message = document.getElementById("message").value.trim();
 
-if(name === "" || email === "" || message === ""){
+            if (name === "" || email === "" || message === "") {
 
-event.preventDefault();
+                event.preventDefault();
+                alert("Please fill in all fields.");
 
-alert("Please fill in all fields.");
+            }
 
-}
+        });
+
+    }
 
 });
 
-}
+function toggleDarkMode() {
 
-});
-function toggleDarkMode(){
-
-document.body.classList.toggle("bg-dark");
-document.body.classList.toggle("text-white");
+    document.body.classList.toggle("bg-dark");
+    document.body.classList.toggle("text-white");
 
 }
