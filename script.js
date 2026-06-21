@@ -26,6 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
 function toggleDarkMode() {
 
     document.body.classList.toggle("bg-dark");
-    document.body.classList.toggle("text-white");
+    document.body.classList.toggle("text-Blue");
 
 }
