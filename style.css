@@ -1,7 +1,15 @@
-/* General Styling */
+/* General Page Styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.4rem;
 }
 
 /* Hero Section */
@@ -11,18 +19,19 @@ body {
     padding: 100px 20px;
 }
 
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
 /* Cards */
 .card {
-    transition: transform 0.3s;
+    border: none;
+    transition: transform 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-5px);
-}
-
-/* Footer */
-footer {
-    margin-top: 50px;
 }
 
 /* Gallery Images */
@@ -30,6 +39,25 @@ footer {
     width: 100%;
     height: 250px;
     object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Gallery Hover Effect */
+.gallery-img:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+/* Forms */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
 }
 
 /* Dark Mode */
@@ -43,6 +71,26 @@ footer {
     color: white;
 }
 
+.dark-mode .navbar {
+    background-color: #000 !important;
+}
+
 .dark-mode footer {
-    background-color: #000;
+    background-color: #000 !important;
+}
+
+.dark-mode form {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+/* Buttons */
+.btn-success {
+    padding: 10px 20px;
+    font-weight: bold;
 }
