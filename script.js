@@ -25,14 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
- function toggleDarkMode() {
+ function toggleDarkMode(){
 
-    document.body.classList.toggle("bg-dark");
-    document.body.classList.toggle("text-Blue");
-    const nav = document.querySelector(".navbar");
-    nav.classList.toggle("navbar-dark");
-    nav.classList.toggle("bg-dark");
-    nav.classList.toggle("navbar-light");
-    nav.classList.toggle("bg-light");
- 
- }
+document.body.classList.toggle("dark-mode");
+
+} 
